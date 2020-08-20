@@ -65,6 +65,8 @@ const handler = (req, res) => {
   if(req.method === 'GET') {
     res.status(200).json({data: books})
   } else if(req.method === 'POST') {
+    const { body } = req
+    console.log('request body', body)
     res.status(201).json({message: 'data successfully created!'})
   } else {
     res.status(400).json({message: 'wrong http method!'})
