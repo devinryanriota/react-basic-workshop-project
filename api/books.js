@@ -61,6 +61,7 @@ const allowCors = fn => async (req, res) => {
 }
 
 const handler = (req, res) => {
+  console.log('request', req)
   if(req.method === 'GET') {
     res.status(200).json({data: books})
   } else if(req.method === 'POST') {
