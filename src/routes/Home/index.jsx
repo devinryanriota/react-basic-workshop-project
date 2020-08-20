@@ -2,8 +2,22 @@ import React from 'react'
 import './home.css'
 
 class Home extends React.Component {
-  constructor() {
-    
+  constructor(props) {
+    super(props)
+
+    state = {
+
+    }
+  }
+
+  componentDidMount = () => {
+
+  }
+
+  render = () => {
+    <div>
+      Homee!
+    </div>
   }
 
 }
