@@ -1,6 +1,8 @@
 import React from 'react'
 import './home.css'
 
+import Card from '../../components/Card'
+
 class Home extends React.Component {
   constructor(props) {
     super(props)
@@ -17,7 +19,13 @@ class Home extends React.Component {
   render = () => {
     return (
       <div>
-        Homee!
+
+        <Card 
+          imgUrl = 'https://picsum.photos/100'
+          title = 'abcdef'
+          author = 'hehe'
+          publishedYear = '2019'
+        />
       </div>
     )
   }
