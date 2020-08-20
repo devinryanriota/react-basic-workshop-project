@@ -46,6 +46,27 @@ class Home extends React.Component {
           author = 'hehe'
           publishedYear = '2019'
         />
+
+        <Card 
+          imgUrl = 'https://picsum.photos/100'
+          title = 'abcdef'
+          author = 'hehe'
+          publishedYear = '2019'
+        />
+
+        <Card 
+          imgUrl = 'https://picsum.photos/100'
+          title = 'abcdef'
+          author = 'hehe'
+          publishedYear = '2019'
+        />
+
+        <Card 
+          imgUrl = 'https://picsum.photos/100'
+          title = 'abcdef'
+          author = 'hehe'
+          publishedYear = '2019'
+        />
       </div>
     )
   }
