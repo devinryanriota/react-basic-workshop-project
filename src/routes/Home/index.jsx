@@ -5,8 +5,8 @@ class Home extends React.Component {
   constructor(props) {
     super(props)
 
-    state = {
-
+    this.state = {
+      input: ''
     }
   }
 
@@ -15,11 +15,12 @@ class Home extends React.Component {
   }
 
   render = () => {
-    <div>
-      Homee!
-    </div>
+    return (
+      <div>
+        Homee!
+      </div>
+    )
   }
-
 }
 
 export default Home
