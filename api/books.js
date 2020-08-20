@@ -61,13 +61,12 @@ const allowCors = fn => async (req, res) => {
 }
 
 const handler = (req, res) => {
-  console.log('request', req)
   if(req.method === 'GET') {
     res.status(200).json({data: books})
   } else if(req.method === 'POST') {
     const { body } = req
     console.log('request body', body)
-    res.status(201).json({message: 'data successfully created!'})
+    res.status(201).json({message: 'data successfully created!', data: req.body})
   } else {
     res.status(400).json({message: 'wrong http method!'})
   }
