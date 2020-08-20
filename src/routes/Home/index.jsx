@@ -13,7 +13,8 @@ class Home extends React.Component {
   }
 
   componentDidMount = () => {
-
+    //API call
+    //parse to state
   }
 
   render = () => {
