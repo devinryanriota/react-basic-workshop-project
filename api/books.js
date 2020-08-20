@@ -61,7 +61,7 @@ const allowCors = fn => async (req, res) => {
 }
 
 const handler = (req, res) => {
-  res.end(books)
+  res.status(200).send(books)
 }
 
 module.exports = allowCors(handler)
