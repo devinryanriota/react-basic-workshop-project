@@ -34,3 +34,8 @@ header {
   margin-left: 12px;
   width: 48px;
 }
+
+.menu-action {
+  text-decoration: none;
+  color: black;
+}
