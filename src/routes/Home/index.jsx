@@ -18,7 +18,27 @@ class Home extends React.Component {
 
   render = () => {
     return (
-      <div>
+      <div className = 'grid-container'>
+        <Card 
+          imgUrl = 'https://picsum.photos/100'
+          title = 'abcdef'
+          author = 'hehe'
+          publishedYear = '2019'
+        />
+
+        <Card 
+          imgUrl = 'https://picsum.photos/100'
+          title = 'abcdef'
+          author = 'hehe'
+          publishedYear = '2019'
+        />
+
+        <Card 
+          imgUrl = 'https://picsum.photos/100'
+          title = 'abcdef'
+          author = 'hehe'
+          publishedYear = '2019'
+        />
 
         <Card 
           imgUrl = 'https://picsum.photos/100'
