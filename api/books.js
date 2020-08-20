@@ -61,7 +61,13 @@ const allowCors = fn => async (req, res) => {
 }
 
 const handler = (req, res) => {
-  res.status(200).send(books)
+  if(req.method === 'GET') {
+    res.status(200).json({data: books})
+  } else if(req.method === 'POST') {
+    res.status(201).json({message: 'data successfully created!'})
+  } else {
+    res.status(400).json({message: 'wrong http method!'})
+  }
 }
 
 module.exports = allowCors(handler)
