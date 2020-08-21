@@ -50,7 +50,7 @@ class Home extends React.Component {
         // <Link to={'/books/' + isbn} className="item" key = { id }>
         <Card
           key = { b.title }
-          imgUrl = 'https://picsum.photos/100'
+          imgUrl = { b.imageUrl }
           title = { b.title }
           author = { b.author }
           publishedYear = { b.publishedDate }
