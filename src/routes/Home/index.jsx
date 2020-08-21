@@ -66,32 +66,39 @@ class Home extends React.Component {
       <div className = 'grid-container'>
         { this.renderCards() }
         <Card
-          key = { b.title }
+          key = 'title'
           imgUrl = 'https://picsum.photos/100'
-          title = { b.title }
-          author = { b.author }
-          publishedYear = { b.publishedDate }
+          title = 'title'
+          author = 'author'
+          publishedYear = 'published date'
         />
         <Card
-          key = { b.title }
+          key = 'title'
           imgUrl = 'https://picsum.photos/100'
-          title = { b.title }
-          author = { b.author }
-          publishedYear = { b.publishedDate }
+          title = 'title'
+          author = 'author'
+          publishedYear = 'published date'
         />
         <Card
-          key = { b.title }
+          key = 'title'
           imgUrl = 'https://picsum.photos/100'
-          title = { b.title }
-          author = { b.author }
-          publishedYear = { b.publishedDate }
+          title = 'title'
+          author = 'author'
+          publishedYear = 'published date'
         />
         <Card
-          key = { b.title }
+          key = 'title'
           imgUrl = 'https://picsum.photos/100'
-          title = { b.title }
-          author = { b.author }
-          publishedYear = { b.publishedDate }
+          title = 'title'
+          author = 'author'
+          publishedYear = 'published date'
+        />
+        <Card
+          key = 'title'
+          imgUrl = 'https://picsum.photos/100'
+          title = 'title'
+          author = 'author'
+          publishedYear = 'published date'
         />
       </div>
     )
