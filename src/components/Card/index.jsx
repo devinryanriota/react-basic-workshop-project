@@ -10,9 +10,9 @@ class Card extends React.Component {
       <div className = 'card'>
         <img src = { imgUrl } alt = { title } style = {{ width: '200px', height: '200px' }}/>
         <div className = 'text-container'>
-          <p style = {{ fontSize: '20', fontWeight: 'bold' }}>{ title }</p>
-          <p>Author: { author }</p>
-          <p>Published: { publishedYear }</p>
+          <p style = {{ fontSize: '16px', fontWeight: 'bold' }}>{ title }</p>
+          <p style = {{ fontSize: '14px' }}>Author: { author }</p>
+          <p style = {{ fontSize: '14px' }}>Published: { publishedYear }</p>
         </div>
       </div>
     )
