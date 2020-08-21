@@ -44,25 +44,6 @@ class Home extends React.Component {
   renderCards = () => {
     const { books } = this.state
     console.log('render cards, books', books)
-    let display = books.map((b) => {
-      return (
-        // <Link to={'/books/' + isbn} className="item" key = { id }>
-        <Card
-          key = { b.title }
-          imgUrl = 'https://picsum.photos/100'
-          title = { b.title }
-          author = { b.author }
-          publishedYear = { b.publishedDate }
-        />
-        // </Link>
-      )
-    })
-    return display
-  }
-
-  render = () => {
-    const { books } = this.state
-    console.log('render cards, books', books)
     let display = []
     books.forEach((b) => {
       display.push(
@@ -77,11 +58,14 @@ class Home extends React.Component {
         //</Link>
       )  
     })
+    return display
+  }
 
+  render = () => {
     console.log('render render', this.state)
     return (
       <div className = 'grid-container'>
-        { display }
+        { this.renderCards() }
       </div>
     )
   }
