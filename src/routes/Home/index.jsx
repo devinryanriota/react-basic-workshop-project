@@ -1,5 +1,6 @@
 import React from 'react'
 import './home.css'
+import Link from 'react-router-dom'
 
 import Card from '../../components/Card'
 
@@ -35,67 +36,34 @@ class Home extends React.Component {
 
     this.setState({
       books: toState
+    }, () => {
+      console.log('state', this.state)
     })
   }
 
   renderCards = () => {
     const { books } = this.state
-    
+    console.log('render cards, books', books)
+    let display = books.map((b) => {
+      return (
+        // <Link to={'/books/' + isbn} className="item" key = { id }>
+        <Card 
+          imgUrl = 'https://picsum.photos/100'
+          title = { b.title }
+          author = { b.author }
+          publishedYear = { b.publishedDate }
+        />
+        // </Link>
+      )
+    })
+    return display
   }
 
   render = () => {
-    const { books } = this.state
 
     return (
       <div className = 'grid-container'>
-        <Card 
-          imgUrl = 'https://picsum.photos/100'
-          title = 'abcdef'
-          author = 'hehe'
-          publishedYear = '2019'
-        />
-
-        <Card 
-          imgUrl = 'https://picsum.photos/100'
-          title = 'abcdef'
-          author = 'hehe'
-          publishedYear = '2019'
-        />
-
-        <Card 
-          imgUrl = 'https://picsum.photos/100'
-          title = 'abcdef'
-          author = 'hehe'
-          publishedYear = '2019'
-        />
-
-        <Card 
-          imgUrl = 'https://picsum.photos/100'
-          title = 'abcdef'
-          author = 'hehe'
-          publishedYear = '2019'
-        />
-
-        <Card 
-          imgUrl = 'https://picsum.photos/100'
-          title = 'abcdef'
-          author = 'hehe'
-          publishedYear = '2019'
-        />
-
-        <Card 
-          imgUrl = 'https://picsum.photos/100'
-          title = 'abcdef'
-          author = 'hehe'
-          publishedYear = '2019'
-        />
-
-        <Card 
-          imgUrl = 'https://picsum.photos/100'
-          title = 'abcdef'
-          author = 'hehe'
-          publishedYear = '2019'
-        />
+        { this.renderCards() }
       </div>
     )
   }
