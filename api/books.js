@@ -7,77 +7,85 @@ const books = [
     "rating": {
       "score": 4.3,
       "out_of": 5
-    }
+    },
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGbih_vVKOHE8su0nNJtVsGxXnprtO1qqtQyjgN_Y2n0nCJWaV"
   },
   {
     "isbn": "isbn-2",
     "title": "Atomic Habits",
     "author": "James Clear",
-    "publishedDate": "2018-10-16",
+    "published_date": "2018-10-16",
     "rating": {
       "score": 4.5,
       "out_of": 5
-    }
+    },
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGbih_vVKOHE8su0nNJtVsGxXnprtO1qqtQyjgN_Y2n0nCJWaV"
   },
   {
     "isbn": "isbn-3",
     "title": "Normal People",
     "author": "Sally Rooney",
-    "publishedDate": "2018-08-28",
+    "published_date": "2018-08-28",
     "rating": {
       "score": 3.9,
       "out_of": 5
-    }
+    },
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGbih_vVKOHE8su0nNJtVsGxXnprtO1qqtQyjgN_Y2n0nCJWaV"
   },
   {
     "isbn": "isbn-4",
     "title": "Invisible Man",
     "author": "Ralph Ellison",
-    "publishedDate": "1952-04-14",
+    "published_date": "1952-04-14",
     "rating": {
       "score": 4,
       "out_of": 5
-    }
+    },
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGbih_vVKOHE8su0nNJtVsGxXnprtO1qqtQyjgN_Y2n0nCJWaV"
   },
   {
     "isbn": "isbn-5",
     "title": "Cleanness",
     "author": "Garth Greenwell",
-    "publishedDate": "2020-01-14",
+    "published_date": "2020-01-14",
     "rating": {
       "score": 4,
       "out_of": 5
-    }
+    },
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGbih_vVKOHE8su0nNJtVsGxXnprtO1qqtQyjgN_Y2n0nCJWaV"
   },
   {
     "isbn": "isbn-6",
     "title": "A Clockwork Orange",
     "author": "Anthony Burgess",
-    "publishedDate": "1962-01-01",
+    "published_date": "1962-01-01",
     "rating": {
       "score": 4.6,
       "out_of": 5
-    }
+    },
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGbih_vVKOHE8su0nNJtVsGxXnprtO1qqtQyjgN_Y2n0nCJWaV"
   },
   {
     "isbn": "isbn-7",
     "title": "Midnight Sun",
     "author": "Stephenie Meyer",
-    "publishedDate": "2020-08-04",
+    "published_date": "2020-08-04",
     "rating": {
       "score": 4,
       "out_of": 5
-    }
+    },
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGbih_vVKOHE8su0nNJtVsGxXnprtO1qqtQyjgN_Y2n0nCJWaV"
   },
   {
     "isbn": "isbn-8",
     "title": "Real Life",
     "author": "Brandon Taylor",
-    "publishedDate": "2020-02-18",
+    "published_date": "2020-02-18",
     "rating": {
       "score": 4,
       "out_of": 5
-    }
+    },
+    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGbih_vVKOHE8su0nNJtVsGxXnprtO1qqtQyjgN_Y2n0nCJWaV"
   }
 ]
 

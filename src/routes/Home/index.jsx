@@ -29,8 +29,9 @@ class Home extends React.Component {
         isbn: b.isbn,
         title: b.title,
         author: b.author,
-        publishedDate: b.publishedDate,
-        rating: b.rating
+        publishedDate: b.published_date,
+        rating: b.rating,
+        imageUrl: b.image_url
       }
     })
 
