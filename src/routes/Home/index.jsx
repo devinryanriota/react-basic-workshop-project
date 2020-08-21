@@ -57,16 +57,16 @@ class Home extends React.Component {
         // </Link>
       )
     })
-    return display
+    return (
+      <div className = 'grid-container'>
+        { display }
+      </div>
+    )
   }
 
   render = () => {
     console.log('render render', this.state)
-    return (
-      <div className = 'grid-container'>
-        { this.renderCards() }
-      </div>
-    )
+    return this.renderCards()
   }
 }
 
