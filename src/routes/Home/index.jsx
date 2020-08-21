@@ -17,16 +17,35 @@ class Home extends React.Component {
   componentDidMount = () => {
     //API call
     BookService.get((res) => {
-      
+      this.processGetBooksResponse(res.data)
     })
-    //parse to state
   }
 
-  processGetBooksResponse = (data) => [
+  processGetBooksResponse = (data) => {
+    const books = data.data
+    let toState = books.map((b) => {
+      return {
+        isbn: b.isbn,
+        title: b.title,
+        author: b.author,
+        publishedDate: b.publishedDate,
+        rating: b.rating
+      }
+    })
 
-  ]
+    this.setState({
+      books: toState
+    })
+  }
+
+  renderCards = () => {
+    const { books } = this.state
+    
+  }
 
   render = () => {
+    const { books } = this.state
+
     return (
       <div className = 'grid-container'>
         <Card 
