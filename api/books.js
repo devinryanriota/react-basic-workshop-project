@@ -3,43 +3,81 @@ const books = [
     "isbn": "isbn-1",
     "title": "Effective Engineer",
     "author": "Edmond Lau",
-    "publishedDate": "2015-03-19",
-    "rating": "4.3/5"
+    "published_date": "2015-03-19",
+    "rating": {
+      "score": 4.3,
+      "out_of": 5
+    }
   },
   {
     "isbn": "isbn-2",
     "title": "Atomic Habits",
     "author": "James Clear",
     "publishedDate": "2018-10-16",
-    "rating": "4.5/5"
+    "rating": {
+      "score": 4.5,
+      "out_of": 5
+    }
   },
   {
     "isbn": "isbn-3",
     "title": "Normal People",
     "author": "Sally Rooney",
     "publishedDate": "2018-08-28",
-    "rating": "3.9/5"
+    "rating": {
+      "score": 3.9,
+      "out_of": 5
+    }
   },
   {
     "isbn": "isbn-4",
     "title": "Invisible Man",
     "author": "Ralph Ellison",
     "publishedDate": "1952-04-14",
-    "rating": "4.0/5"
+    "rating": {
+      "score": 4,
+      "out_of": 5
+    }
   },
   {
     "isbn": "isbn-5",
-    "title": "All the Light We Cannot See",
-    "author": "Anthony Doerr",
-    "publishedDate": "2014-05-06",
-    "rating": "4.4/5"
+    "title": "Cleanness",
+    "author": "Garth Greenwell",
+    "publishedDate": "2020-01-14",
+    "rating": {
+      "score": 4,
+      "out_of": 5
+    }
   },
   {
     "isbn": "isbn-6",
     "title": "A Clockwork Orange",
     "author": "Anthony Burgess",
     "publishedDate": "1962-01-01",
-    "rating": "4.6/5"
+    "rating": {
+      "score": 4.6,
+      "out_of": 5
+    }
+  },
+  {
+    "isbn": "isbn-7",
+    "title": "Midnight Sun",
+    "author": "Stephenie Meyer",
+    "publishedDate": "2020-08-04",
+    "rating": {
+      "score": 4,
+      "out_of": 5
+    }
+  },
+  {
+    "isbn": "isbn-8",
+    "title": "Real Life",
+    "author": "Brandon Taylor",
+    "publishedDate": "2020-02-18",
+    "rating": {
+      "score": 4,
+      "out_of": 5
+    }
   }
 ]
 
