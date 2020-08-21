@@ -63,8 +63,9 @@ class Home extends React.Component {
   render = () => {
     const { books } = this.state
     console.log('render cards, books', books)
-    let display = books.map((b) => {
-      return (
+    let display = []
+    books.forEach((b) => {
+      display.push(
         // <Link to={'/books/' + isbn} className="item" key = { id }>
         <Card
           key = { b.title }
@@ -73,8 +74,8 @@ class Home extends React.Component {
           author = { b.author }
           publishedYear = { b.publishedDate }
         />
-        // </Link>
-      )
+        //</Link>
+      )  
     })
 
     console.log('render render', this.state)
