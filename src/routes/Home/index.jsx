@@ -3,19 +3,28 @@ import './home.css'
 
 import Card from '../../components/Card'
 
+import BookService from '../../services/BookService'
+
 class Home extends React.Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      input: ''
+      books: []
     }
   }
 
   componentDidMount = () => {
     //API call
+    BookService.get((res) => {
+      
+    })
     //parse to state
   }
+
+  processGetBooksResponse = (data) => [
+
+  ]
 
   render = () => {
     return (
