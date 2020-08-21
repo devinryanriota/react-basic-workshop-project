@@ -1,6 +1,6 @@
 import React from 'react'
 import './home.css'
-import Link from 'react-router-dom'
+// import Link from 'react-router-dom'
 
 import Card from '../../components/Card'
 
@@ -47,7 +47,8 @@ class Home extends React.Component {
     let display = books.map((b) => {
       return (
         // <Link to={'/books/' + isbn} className="item" key = { id }>
-        <Card 
+        <Card
+          key = { b.title }
           imgUrl = 'https://picsum.photos/100'
           title = { b.title }
           author = { b.author }
