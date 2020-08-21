@@ -43,9 +43,9 @@ class Home extends React.Component {
 
   renderCards = () => {
     const { books } = this.state
-    console.log('render cards, books', books)
-    let display = books.map((b) => {
-      return (
+    let display = []
+    books.forEach((b) => {
+      display.push(
         // <Link to={'/books/' + isbn} className="item" key = { id }>
         <Card
           key = { b.title }
@@ -54,52 +54,16 @@ class Home extends React.Component {
           author = { b.author }
           publishedYear = { b.publishedDate }
         />
-        // </Link>
-      )
+        //</Link>
+      )  
     })
     return display
   }
 
   render = () => {
-    console.log('render render', this.state)
     return (
       <div className = 'grid-container'>
         { this.renderCards() }
-        <Card
-          key = 'title'
-          imgUrl = 'https://picsum.photos/100'
-          title = 'title'
-          author = 'author'
-          publishedYear = 'published date'
-        />
-        <Card
-          key = 'title'
-          imgUrl = 'https://picsum.photos/100'
-          title = 'title'
-          author = 'author'
-          publishedYear = 'published date'
-        />
-        <Card
-          key = 'title'
-          imgUrl = 'https://picsum.photos/100'
-          title = 'title'
-          author = 'author'
-          publishedYear = 'published date'
-        />
-        <Card
-          key = 'title'
-          imgUrl = 'https://picsum.photos/100'
-          title = 'title'
-          author = 'author'
-          publishedYear = 'published date'
-        />
-        <Card
-          key = 'title'
-          imgUrl = 'https://picsum.photos/100'
-          title = 'title'
-          author = 'author'
-          publishedYear = 'published date'
-        />
       </div>
     )
   }
