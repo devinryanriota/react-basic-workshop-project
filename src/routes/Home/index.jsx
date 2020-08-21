@@ -43,7 +43,6 @@ class Home extends React.Component {
 
   renderCards = () => {
     const { books } = this.state
-    console.log('render cards, books', books)
     let display = []
     books.forEach((b) => {
       display.push(
@@ -62,7 +61,6 @@ class Home extends React.Component {
   }
 
   render = () => {
-    console.log('render render', this.state)
     return (
       <div className = 'grid-container'>
         { this.renderCards() }
