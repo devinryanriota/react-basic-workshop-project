@@ -61,45 +61,26 @@ class Home extends React.Component {
   }
 
   render = () => {
+    const { books } = this.state
+    console.log('render cards, books', books)
+    let display = books.map((b) => {
+      return (
+        // <Link to={'/books/' + isbn} className="item" key = { id }>
+        <Card
+          key = { b.title }
+          imgUrl = 'https://picsum.photos/100'
+          title = { b.title }
+          author = { b.author }
+          publishedYear = { b.publishedDate }
+        />
+        // </Link>
+      )
+    })
+
     console.log('render render', this.state)
     return (
       <div className = 'grid-container'>
-        { this.renderCards() }
-        <Card
-          key = 'title'
-          imgUrl = 'https://picsum.photos/100'
-          title = 'title'
-          author = 'author'
-          publishedYear = 'published date'
-        />
-        <Card
-          key = 'title'
-          imgUrl = 'https://picsum.photos/100'
-          title = 'title'
-          author = 'author'
-          publishedYear = 'published date'
-        />
-        <Card
-          key = 'title'
-          imgUrl = 'https://picsum.photos/100'
-          title = 'title'
-          author = 'author'
-          publishedYear = 'published date'
-        />
-        <Card
-          key = 'title'
-          imgUrl = 'https://picsum.photos/100'
-          title = 'title'
-          author = 'author'
-          publishedYear = 'published date'
-        />
-        <Card
-          key = 'title'
-          imgUrl = 'https://picsum.photos/100'
-          title = 'title'
-          author = 'author'
-          publishedYear = 'published date'
-        />
+        { display }
       </div>
     )
   }
