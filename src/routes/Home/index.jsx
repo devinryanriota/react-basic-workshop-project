@@ -61,7 +61,7 @@ class Home extends React.Component {
   }
 
   render = () => {
-
+    console.log('render render', this.state)
     return (
       <div className = 'grid-container'>
         { this.renderCards() }
