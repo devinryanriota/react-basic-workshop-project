@@ -41,6 +41,7 @@ class Create extends React.Component {
       if(res.isSuccess) {
         alert(res.message)
         this.resetStates()
+        this.props.history.push('/')
       } else {
         alert('error!')
       }
