@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Book Catalog",
+  "name": "Simple Book Catalog",
   "icons": [
     {
       "src": "favicon.ico",
