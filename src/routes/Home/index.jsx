@@ -30,7 +30,10 @@ class Home extends React.Component {
         title: b.title,
         author: b.author,
         publishedDate: b.published_date,
-        rating: b.rating,
+        rating: {
+          score: b.rating.score,
+          outOf: b.rating.out_of
+        },
         imageUrl: b.image_url
       }
     })
@@ -54,6 +57,7 @@ class Home extends React.Component {
           title = { b.title }
           author = { b.author }
           publishedYear = { b.publishedDate }
+          rating = { b.rating }
         />
         //</Link>
       )  
