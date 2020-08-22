@@ -61,6 +61,7 @@ class Create extends React.Component {
 
     return (
       <div>
+        <h1>Create</h1>
         <table>
           <tbody>
             <tr>
