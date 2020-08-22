@@ -14,7 +14,16 @@ BookService.get = (callback) => {
   })
   .then((response) => {
     console.log('response', response)
-    callback(response)
+    if(response.status === 200) {
+      callback({
+        isSuccess: true,
+        data: response.data
+      })
+    } else {
+      callback({
+        isSuccess: false
+      })
+    }
   })
 }
 
@@ -28,7 +37,17 @@ BookService.create = (title, author, date, callback) => {
   })
   .then((response) => {
     console.log('response', response)
-    callback(response)
+    if(response.status === 201) {
+      callback({
+        isSuccess: true,
+        message: response.data.message,
+        data: response.data.data
+      })
+    } else {
+      callback({
+        isSuccess: false
+      })
+    }
   })
 }
 

@@ -38,7 +38,20 @@ class Create extends React.Component {
     const { title, author, date } = this.state
 
     BookService.create(title, author, date, (res) => {
-      alert(res.data.message)
+      if(res.isSuccess) {
+        alert(res.message)
+        this.resetStates()
+      } else {
+        alert('error!')
+      }
+    })
+  }
+
+  resetStates = () => {
+    this.setState({
+      title: '',
+      author: '',
+      date: ''
     })
   }
 

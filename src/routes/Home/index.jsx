@@ -18,7 +18,11 @@ class Home extends React.Component {
   componentDidMount = () => {
     //API call
     BookService.get((res) => {
-      this.processGetBooksResponse(res.data)
+      if(res.isSuccess) {
+        this.processGetBooksResponse(res.data)
+      } else {
+        alert('failed to fetch!')
+      }
     })
   }
 
