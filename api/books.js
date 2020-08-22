@@ -19,7 +19,7 @@ const books = [
       "score": 4.5,
       "out_of": 5
     },
-    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGbih_vVKOHE8su0nNJtVsGxXnprtO1qqtQyjgN_Y2n0nCJWaV"
+    "image_url": "https://jamesclear.com/wp-content/uploads/2019/09/AH-Preferred-Badge.png"
   },
   {
     "isbn": "isbn-3",
@@ -30,7 +30,7 @@ const books = [
       "score": 3.9,
       "out_of": 5
     },
-    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGbih_vVKOHE8su0nNJtVsGxXnprtO1qqtQyjgN_Y2n0nCJWaV"
+    "image_url": "https://www.oxfordstudent.com/wp-content/uploads/2019/11/2w.jpg"
   },
   {
     "isbn": "isbn-4",
@@ -41,18 +41,18 @@ const books = [
       "score": 4,
       "out_of": 5
     },
-    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGbih_vVKOHE8su0nNJtVsGxXnprtO1qqtQyjgN_Y2n0nCJWaV"
+    "image_url": "https://cdn.shoplightspeed.com/shops/633243/files/20279981/1600x2048x2/invisible-man-gordon-parks-and-ralph-ellison-in-ha.jpg"
   },
   {
     "isbn": "isbn-5",
-    "title": "Cleanness",
-    "author": "Garth Greenwell",
-    "published_date": "2020-01-14",
+    "title": "Weather",
+    "author": "Jenny Offill",
+    "published_date": "2020-02-11",
     "rating": {
-      "score": 4,
+      "score": 3.7,
       "out_of": 5
     },
-    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGbih_vVKOHE8su0nNJtVsGxXnprtO1qqtQyjgN_Y2n0nCJWaV"
+    "image_url": "https://static01.nyt.com/images/2020/02/04/books/03bookoffill/03bookoffill-superJumbo.jpg?quality=90&auto=webp"
   },
   {
     "isbn": "isbn-6",
@@ -63,7 +63,7 @@ const books = [
       "score": 4.6,
       "out_of": 5
     },
-    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGbih_vVKOHE8su0nNJtVsGxXnprtO1qqtQyjgN_Y2n0nCJWaV"
+    "image_url": "https://prodimage.images-bn.com/pimages/9780393341768_p0_v3_s550x406.jpg"
   },
   {
     "isbn": "isbn-7",
@@ -74,7 +74,7 @@ const books = [
       "score": 4,
       "out_of": 5
     },
-    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGbih_vVKOHE8su0nNJtVsGxXnprtO1qqtQyjgN_Y2n0nCJWaV"
+    "image_url": "https://id.wikipedia.org/w/index.php?title=Berkas:Midnight_Sun_-_Stephanie_Meyer_novel_cover_artwork.jpg&filetimestamp=20200507055408&"
   },
   {
     "isbn": "isbn-8",
@@ -85,7 +85,7 @@ const books = [
       "score": 4,
       "out_of": 5
     },
-    "image_url": "https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSGbih_vVKOHE8su0nNJtVsGxXnprtO1qqtQyjgN_Y2n0nCJWaV"
+    "image_url": "https://i0.wp.com/www.paperbackparis.com/wp-content/uploads/2019/09/Best-Books-Staff-Picks-September-2019-Real-Life-Brandon-Taylor.png?w=600"
   }
 ]
 
