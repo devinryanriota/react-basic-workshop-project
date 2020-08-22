@@ -74,7 +74,7 @@ const books = [
       "score": 4,
       "out_of": 5
     },
-    "image_url": "https://id.wikipedia.org/w/index.php?title=Berkas:Midnight_Sun_-_Stephanie_Meyer_novel_cover_artwork.jpg&filetimestamp=20200507055408&"
+    "image_url": "https://upload.wikimedia.org/wikipedia/id/e/eb/Midnight_Sun_-_Stephanie_Meyer_novel_cover_artwork.jpg"
   },
   {
     "isbn": "isbn-8",
