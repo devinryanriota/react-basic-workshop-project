@@ -18,13 +18,13 @@ BookService.get = (callback) => {
   })
 }
 
-BookService.create = (title, author, year, callback) => {
+BookService.create = (title, author, date, callback) => {
   const PATH = BASE_URL + BOOKS_PATH
 
   axios.post(PATH, {
     title: title,
     author: author,
-    year: year
+    date: date
   })
   .then((response) => {
     console.log('response', response)

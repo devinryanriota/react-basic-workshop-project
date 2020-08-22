@@ -1,6 +1,8 @@
 import React from 'react'
 import './create.css'
 
+import BookService from '../../services/BookService'
+
 class Create extends React.Component {
   constructor(props) {
     super(props)
@@ -8,7 +10,7 @@ class Create extends React.Component {
     this.state = {
       title: '',
       author: '',
-      year: ''
+      date: ''
     }
   }
 
@@ -24,49 +26,56 @@ class Create extends React.Component {
     })
   }
 
-  handleYearChange = (event) => {
+  handleDateChange = (event) => {
     this.setState({
-      year: event.target.value
+      date: event.target.value
     })
   }
 
   handleSubmit = (event) => {
     event.preventDefault()
-    alert('abc')
+
+    const { title, author, date } = this.state
+
+    BookService.create(title, author, date, (res) => {
+      alert(res.data.message)
+    })
   }
 
   render = () => {
-    const { title, author, year } = this.state
+    const { title, author, date } = this.state
 
     return (
       <div>
         <table>
-          <tr>
-            <td>
-              Title
-            </td>
-            <td>
-              <input type = "text" value = { title } onChange = { this.handleTitleChange } required/>
-            </td>
-          </tr>
+          <tbody>
+            <tr>
+              <td>
+                Title
+              </td>
+              <td>
+                <input type = "text" value = { title } onChange = { this.handleTitleChange } required/>
+              </td>
+            </tr>
 
-          <tr>
-            <td>
-              Author
-            </td>
-            <td>
-              <input type = "text" value = { author } onChange = { this.handleAuthorChange } required/>
-            </td>
-          </tr>
+            <tr>
+              <td>
+                Author
+              </td>
+              <td>
+                <input type = "text" value = { author } onChange = { this.handleAuthorChange } required/>
+              </td>
+            </tr>
 
-          <tr>
-            <td>
-              Year
-            </td>
-            <td>
-              <input type = "text" value = { year } onChange = { this.handleYearChange } required/>
-            </td>
-          </tr>
+            <tr>
+              <td>
+                Date
+              </td>
+              <td>
+                <input type = "text" value = { date } onChange = { this.handleDateChange } required/>
+              </td>
+            </tr>
+          </tbody>
         </table>
 
         <input type = "submit" value = "submit" onClick = { this.handleSubmit }/>
