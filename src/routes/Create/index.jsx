@@ -39,7 +39,8 @@ class Create extends React.Component {
 
     BookService.create(title, author, date, (res) => {
       if(res.isSuccess) {
-        alert(res.message)
+        const alertMessage = res.message + "\ndata: " + JSON.stringify(res.data)
+        alert(alertMessage)
         this.resetStates()
         this.props.history.push('/')
       } else {
