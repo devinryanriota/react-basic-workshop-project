@@ -45,7 +45,7 @@ class Home extends React.Component {
     this.setState({
       books: toState
     }, () => {
-      console.log('state', this.state)
+      console.log('books state', this.state)
     })
   }
 
